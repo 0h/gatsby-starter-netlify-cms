@@ -65,10 +65,9 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Ürün Adı", name: "urunadi", widget: "string"}
+      - {label: "Ekleme Tarihi", name: "date", widget: "datetime"}
+      - {label: "Ürün Açıklaması", name: "urunaciklama", widget: "text"}
+      - {label: "Ürün resmi", name: "urunresmi", widget: image}
+      - {label: "Teknik özellikler", name: "teknikozellik", widget: image}
+      - {label: "Kategori", name: "kategori", widget: "list"}
