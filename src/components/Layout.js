@@ -4,11 +4,6 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
-import BackgroundSlider from 'react-background-slider'
-
-
-import back1 from '../img/back1.jpg'
-import back2 from '../img/back2.jpg'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -52,11 +47,6 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
       <div>{children}</div>
       <Footer />
-      <BackgroundSlider
-          images={[back1, back2]}
-          duration={8}
-          transition={2}
-        />
     </div>
   )
 }
