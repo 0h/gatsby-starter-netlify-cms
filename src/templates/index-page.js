@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Flickity from 'react-flickity-component'
+import "../assets/flickity.css";
 
 import Layout from '../components/Layout'
 
@@ -10,6 +12,10 @@ export const IndexPageTemplate = ({
   subheading,
 }) => (
   <div>
+    <Flickity>
+      <img src="./img/back1.jpg" />
+      <img src="./img/back2.jpg" />
+  </Flickity>
     <div
       className="full-width-image margin-top-0"
       style={{
