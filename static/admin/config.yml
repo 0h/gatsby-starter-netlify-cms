@@ -62,12 +62,11 @@ collections:
     label: "Ürünler"
     folder: "src/pages/urunler"
     create: true
-    identifier_field: name
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Ürün Adı", name: "urunadi", widget: "string"}
+      - {label: "Ürün Adı", name: "title", widget: "string"}
       - {label: "Ekleme Tarihi", name: "date", widget: "datetime"}
-      - {label: "Ürün Açıklaması", name: "urunaciklama", widget: "text"}
-      - {label: "Ürün resmi", name: "urunresmi", widget: image}
-      - {label: "Teknik özellikler", name: "teknikozellik", widget: image}
-      - {label: "Kategori", name: "kategori", widget: "list"}
+      - {label: "Ürün resmi", name: "image", widget: image}
+      - {label: "Teknik özellikler", name: "techspec", widget: image}
+      - {label: "Tag", name: "tag", widget: "list"}
