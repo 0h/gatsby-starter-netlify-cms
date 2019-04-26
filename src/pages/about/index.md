@@ -1,19 +1,11 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: Hakkımızda
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+Letta Light Türk mühendislerin geliştirdiği yüzlerce aydınlatma ürününün yanı sıra üç kıtada, onlarca ülkede gerçekleştirdiği projelerde müşterilerine aydınlatma tasarımı çözümleri sunuyor. 
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Oteller, tarihi eserler, köprüler, fabrikalar, stadyumlar, AVM’ler, hastaneler ve okullar gibi içinde yaşadığımız binalara kimlik kazandırarak onları yaşayan ve nefes alan mekanlara dönüştüren Epixa Light; kuruluşundan buyana hızla büyüyerek, Türkiye’nin başarılı aydınlatma firması olma gururuyla yurt içi ve yurtdışındaki prestijli projelere imza atmaya devam ediyor. 
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Epixa Light "Dünyaya açılmak için üretmek lazım" prensibinden yola çıkarak, heyecanını hiç kaybetmeden yenilikçi ürünler üreten uzman mühendis kadrosuyla; EN İYİ PROJE, EN İYİ ÜRÜN, EN İYİ KONTROL ilkesini benimseyerek 100’e yakın patentli ürüne sahiptir. 
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Epixa Light olarak amacımız; sürekli kendini yenileyen ARGE’mizle projeye uygun ürünler sunarak, mekanların mimari yapısıyla bütünleşen tasarımlarımızı, zamanında ve kusursuz olarak hayata geçirmektir.
