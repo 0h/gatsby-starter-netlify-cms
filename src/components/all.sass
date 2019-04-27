@@ -1,13 +1,23 @@
 @import "~bulma/sass/utilities/initial-variables"
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: rgba(0, 0, 0, 0.1)
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
-$black: #2b2523
+$black: rgba(0, 0, 0, 0.5)
+html
+  height: 100%
+  box-sizing: border-box
+
+body 
+  position: relative
+  margin: 0
+  padding: 0
+  min-height: 100%
+  font-family: sans-serif
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -79,9 +89,17 @@ $black: #2b2523
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+
+footer
+  padding: 0
 footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0
+  background-color: #000
+
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -137,3 +155,13 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+.slider-wrapper
+  margin-top: -52px
+
+.navbar-menu
+    flex-grow: 0
+    flex-shrink: 1
+
+.navbar > .container
+    justify-content: center

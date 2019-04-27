@@ -6,7 +6,7 @@ import SimpleSlider from "../components/Slider";
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = () => (
-  <div>
+  <div className='slider-wrapper'>
     <SimpleSlider />
   </div>
 )

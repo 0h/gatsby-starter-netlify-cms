@@ -1,28 +1,23 @@
 import React from "react";
-import Slider from "react-slick";
+import AwesomeSlider from 'react-awesome-slider';
+import i1 from '../img/1.jpg'
+import i2 from '../img/2.jpg'
+import i3 from '../img/3.jpg'
+import AwsSliderStyles from '../components/foldout.scss';
+
 
 class SimpleSlider extends React.Component {
+
   render() {
-    var settings = {
-        dots: false,
-        lazyLoad: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 2,
-        autoplay: true,
-        autoplaySpeed: 2000
-    };
     return (
-      <Slider {...settings}>
-        <div>
-            <img src="./img/back1.jpg" alt="" />
-        </div>
-        <div>
-            <img src="./img/back2.jpg" alt="" />
-        </div>
-      </Slider>
+      <AwesomeSlider
+        name="images"
+        cssModule={AwsSliderStyles}
+        >
+        <div data-src={i1} />
+        <div data-src={i2} />
+        <div data-src={i3} />
+      </AwesomeSlider>
     );
   }
 }

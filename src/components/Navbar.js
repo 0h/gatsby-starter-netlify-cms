@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-black"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -69,21 +69,12 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/blog">
                 Projeler
               </Link>
+              <Link className="navbar-item" to="/blog">
+                Galeri
+              </Link>
               <Link className="navbar-item" to="/contact">
                 İletişim
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
             </div>
           </div>
         </div>
