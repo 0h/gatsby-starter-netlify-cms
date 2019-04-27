@@ -1,25 +1,26 @@
-import React from "react";
-import Slider from "react-slick";
+import React from "react"
+import Slider from "react-slick"
 
 class SimpleSlider extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-          height: window.innerHeight
+          height: 0, // or your default width here
         }
-    }
-
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
       }
-      
+      componentDidMount() {
+        this.handleWindowSizeChange() // Set width
+        window.addEventListener('resize', this.handleWindowSizeChange)
+      }
+    
+      // make sure to remove the listener
+      // when the component is not mounted anymore
       componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
+        window.removeEventListener('resize', this.handleWindowSizeChange)
       }
-      
-      updateWindowDimensions = () => {
-        this.setState({ height: window.innerHeight });
+    
+      handleWindowSizeChange = () => {
+        this.setState({ height: window.innerHeight })
       }
 
     render() {
