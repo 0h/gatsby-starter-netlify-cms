@@ -7,7 +7,6 @@ class SimpleSlider extends React.Component {
         this.state = {
           height: window.innerHeight
         }
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
     componentDidMount() {
@@ -19,7 +18,7 @@ class SimpleSlider extends React.Component {
         window.removeEventListener('resize', this.updateWindowDimensions);
       }
       
-      updateWindowDimensions() {
+      updateWindowDimensions = () => {
         this.setState({ height: window.innerHeight });
       }
 
