@@ -1,25 +1,51 @@
 import React from "react";
-import AwesomeSlider from 'react-awesome-slider';
-import i1 from '../img/1.jpg'
-import i2 from '../img/2.jpg'
-import i3 from '../img/3.jpg'
-import AwsSliderStyles from '../components/foldout.scss';
-
+import Slider from "react-slick";
 
 class SimpleSlider extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+          height: window.innerHeight
+        }
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    }
 
-  render() {
-    return (
-      <AwesomeSlider
-        name="images"
-        cssModule={AwsSliderStyles}
-        >
-        <div data-src={i1} />
-        <div data-src={i2} />
-        <div data-src={i3} />
-      </AwesomeSlider>
-    );
-  }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ height: window.innerHeight });
+      }
+
+    render() {
+        var settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            swipe: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        };
+        const style = { width: '100%', height:`${ this.state.height-44 }px` }
+        return (
+        <Slider {...settings}>
+            <div>
+                <img src="./img/back1.jpg" alt="" style={style}/>
+            </div>
+            <div>
+                <img src="./img/back2.jpg" alt="" style={style}/>
+            </div>
+        </Slider>
+        );
+    }
 }
 
 export default SimpleSlider
