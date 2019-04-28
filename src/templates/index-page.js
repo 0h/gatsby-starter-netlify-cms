@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import SimpleSlider from "../components/Slider";
+import SimpleSlider1 from "../components/Slider1";
 
 import Layout from '../components/Layout'
 
 export const IndexPageTemplate = () => (
   <div className='slider-wrapper'>
-    <SimpleSlider />
+    <SimpleSlider1 />
   </div>
 )
 
